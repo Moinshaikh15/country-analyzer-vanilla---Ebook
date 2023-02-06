@@ -422,6 +422,7 @@ function optInForm() {
       cSpecInput.onclick = () => {
         if (error === "speciality") {
           error = "";
+          document.querySelector(".err-msg")?.remove();
         }
       };
       cSpecialityMainDiv.append(cSpecInput);
